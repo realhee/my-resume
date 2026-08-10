@@ -8,7 +8,7 @@
 
 ## 기본사항.
 
-Email: genieechoii@gmail.com
+Email: wlsgml5628@gmail.com
 
 ✍🏻 Blog | [https://geniee.tistory.com](https://geniee.tistory.com/)
 
