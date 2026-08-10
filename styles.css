@@ -240,23 +240,25 @@ section {
 }
 
 .row-left {
-  flex-basis: 23%;
-  max-width: 23%;
+  flex-basis: 25%;
+  max-width: 25%;
   flex-shrink: 0;
   padding-top: 2px;
 }
 
 .row-left h3 {
   margin-bottom: 6px;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 .row-left h3 a {
-  color: var(--text);
+  color: var(--primary);
 }
 
 .row-left h3 a:hover {
-  color: var(--primary);
-  text-decoration: none;
+  color: var(--primary-dark);
+  text-decoration: underline;
 }
 
 .role {
@@ -265,6 +267,8 @@ section {
   font-weight: 600;
   color: var(--primary);
   margin-bottom: 4px;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 .period {
@@ -272,12 +276,16 @@ section {
   font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.5;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 .duration {
   display: block;
   font-size: 0.78rem;
   color: var(--text-light);
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 .row-right {
@@ -396,7 +404,28 @@ footer a {
   }
 
   h1 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  h4 {
+    font-size: 1.05rem;
+  }
+
+  .big-paragraph {
+    font-size: 0.95rem;
+    max-width: 100%;
+    line-height: 1.7;
   }
 
   header.hero {
@@ -418,7 +447,7 @@ footer a {
   .contact-list {
     text-align: center;
   }
-
+ 
   .contact-list li {
     justify-content: center;
   }
@@ -438,6 +467,7 @@ footer a {
 
   .row-left h3 {
     width: 100%;
+    white-space: normal;
   }
 
   .skills-group {
