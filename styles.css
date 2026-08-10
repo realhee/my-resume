@@ -24,8 +24,51 @@
   --radius: 6px;
 
   --max-w: 860px;
-  --row-left-w: 200px;
-  --col-gap: 40px;
+}
+
+/* ── 다크모드 테마 토큰 (yowu.dev 기반 무채색 차콜/젯블랙) ── */
+[data-theme="dark"] {
+  --text: #e3e3e3;
+  --text-muted: #8a8a8a;
+  --text-light: #606060;
+  --bg: #121212;
+  --bg-subtle: #1e1e1e;
+  --border: #2d2d2d;
+  --primary-light: #2d2d2d;
+}
+
+/* ── 테마 전환 부드러운 트랜지션 ── */
+body, header, section, div, p, span, h1, h2, h3, h4, h5, a, li, ul {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ── 다크모드 토글 버튼 (최소한의 심플 디자인) ── */
+.theme-toggle-btn {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  z-index: 1000;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.9);
 }
 
 /* ── 리셋 & 베이스 ────────────────────────────────────────── */
@@ -157,6 +200,7 @@ header.hero {
   line-height: 1.8;
   color: var(--text-muted);
   max-width: 430px;
+  margin-top: 12px;
 }
 
 .hero-side {
@@ -227,7 +271,7 @@ section {
 /* ── 2컬럼 ROW 레이아웃 ───────────────────────────────────── */
 .row {
   display: flex;
-  gap: var(--col-gap);
+  gap: 40px;
   margin-bottom: 32px;
   padding-bottom: 32px;
   border-bottom: 1px solid var(--border);
@@ -240,8 +284,8 @@ section {
 }
 
 .row-left {
-  flex-basis: 25%;
-  max-width: 25%;
+  flex-basis: 28%;
+  max-width: 28%;
   flex-shrink: 0;
   padding-top: 2px;
 }
@@ -486,6 +530,21 @@ footer a {
    ──────────────────────────────────────────────────────────── */
 @media print {
 
+  /* ── 다크모드 리셋 및 토글 숨김 ── */
+  .theme-toggle-btn {
+    display: none !important;
+  }
+
+  :root {
+    --text: #1e293b !important;
+    --text-muted: #64748b !important;
+    --text-light: #94a3b8 !important;
+    --bg: #ffffff !important;
+    --bg-subtle: #f8fafc !important;
+    --border: #e2e8f0 !important;
+    --primary-light: #dbeafe !important;
+  }
+
   /* ── A4 페이지 설정 ── */
   @page {
     size: A4 portrait;
@@ -507,8 +566,8 @@ footer a {
     padding: 0;
     font-size: 8pt;
     line-height: 1.6;
-    color: #000;
-    background: #fff;
+    color: #1e293b !important;
+    background: #ffffff !important;
   }
 
   a {
@@ -594,7 +653,7 @@ footer a {
 
   .big-paragraph {
     font-size: 8pt;
-    color: #333;
+    color: #64748b !important;
     max-width: none;
     line-height: 1.6;
   }
@@ -642,7 +701,7 @@ footer a {
   }
 
   .row-left {
-    width: 110pt;
+    width: 135pt;
     flex-shrink: 0;
   }
 
