@@ -122,7 +122,7 @@ Email: wlsgml5628@gmail.com
     - 애자일 소프트웨어 공학 탐구 및 인사이트 공유
     - 클린 코드, 클린 아키텍처, 리팩터링-2판, You Don’t Know JS, 이펙티브 타입스크립트, 함께 자라기 등
 
-### [**구글 스프린트 7기 (FTOOS)**](https://geniee.tistory.com/entry/%EA%B5%AC%EA%B8%80-%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8-7%EA%B8%B0-FTOOS-%ED%9A%8C%EA%B3%A0)
+### [**[FTOOOS] 구글 스프린트 7기**](https://geniee.tistory.com/entry/%EA%B5%AC%EA%B8%80-%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8-7%EA%B8%B0-FTOOS-%ED%9A%8C%EA%B3%A0)
 
 - 기간 | 2022-05 ~ 2022-05
     - 기획자, 디자이너, 개발자 현업자들과 5일간 아이데이션부터 배포까지 빠르게 검증하는 단기 스프린트 프로젝트
@@ -153,7 +153,7 @@ Email: wlsgml5628@gmail.com
 - 기간 | 2025-08 ~ 2025-10
     - 우아한형제들 교육 기관(NEXTSTEP) 에서 진행한 오프라인 ai 워크숍
     - 주니어 개발자 대상으로 오프라인 밋업 주최
-    - AI Agent 워크플로우 구축 및 개발 시간 단축 [성공 사례 발표](https://docs.google.com/presentation/d/1JeoV01_y2SNRaPoi4ZsbgXulCwAM9buHS0OvnXAd8JI/edit?usp=sharing)
+    - AI Agent 워크플로우 구축 및 개발 시간 단축 [성공 사례 발표](https://docs.google.com/presentation/d/e/2PACX-1vSuj5J8YNsQ6O_S_3bxIwu_5GLXKxFr0waO4PUFZi8bseAoB_fnpT2u-9XD2Caq0-yhrRyCkC5rKjiD/pub?start=false&loop=false&delayms=3000)
 
 ### [**[NEXTSTEP] 글쓰기 워크숍 3기**](https://edu.nextstep.camp/c/81psVr9U)
 
