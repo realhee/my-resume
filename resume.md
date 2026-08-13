@@ -122,6 +122,13 @@ Email: wlsgml5628@gmail.com
     - 애자일 소프트웨어 공학 탐구 및 인사이트 공유
     - 클린 코드, 클린 아키텍처, 리팩터링-2판, You Don’t Know JS, 이펙티브 타입스크립트, 함께 자라기 등
 
+### [**구글 스프린트 7기 (FTOOS)**](https://geniee.tistory.com/entry/%EA%B5%AC%EA%B8%80-%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8-7%EA%B8%B0-FTOOS-%ED%9A%8C%EA%B3%A0)
+
+- 기간 | 2022-05 ~ 2022-05 (6일)
+    - 다양한 직군의 크루들과 5일간 아이데이션부터 배포까지 빠르게 검증하는 단기 스프린트 프로젝트
+    - 메인 프로젝트 주제 **"소프트웨어 장인 로드맵" 아이디어 제안 및 팀 프로젝트 선정**
+    - Figma/FigJam 기반 사용자 페르소나 정의, User Journey Map 설계 및 빠른 아이데이션 수립
+
 ### [**[keep-going] VanillaJS 클린 코드 스터디**](https://github.com/no-back)
 
 - 기간 | 2022-02 ~ 2023-12
