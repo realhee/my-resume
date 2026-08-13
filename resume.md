@@ -124,10 +124,11 @@ Email: wlsgml5628@gmail.com
 
 ### [**구글 스프린트 7기 (FTOOS)**](https://geniee.tistory.com/entry/%EA%B5%AC%EA%B8%80-%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8-7%EA%B8%B0-FTOOS-%ED%9A%8C%EA%B3%A0)
 
-- 기간 | 2022-05 ~ 2022-05 (6일)
-    - 다양한 직군의 크루들과 5일간 아이데이션부터 배포까지 빠르게 검증하는 단기 스프린트 프로젝트
-    - 메인 프로젝트 주제 **"소프트웨어 장인 로드맵" 아이디어 제안 및 팀 프로젝트 선정**
-    - Figma/FigJam 기반 사용자 페르소나 정의, User Journey Map 설계 및 빠른 아이데이션 수립
+- 기간 | 2022-05 ~ 2022-05
+    - 기획자, 디자이너, 개발자 현업자들과 5일간 아이데이션부터 배포까지 빠르게 검증하는 단기 스프린트 프로젝트
+    - 주니어 개발자를 위한 기술서적 추천 로드맵 아이디어 제안
+    - TypeScript 기반 [웹 앱 구현](https://github.com/FTOOOS/frontend-master-library)
+    - 배포 후 MAU 측정과 사용자 피드백 반영으로 GitHub Star 40+ 달성
 
 ### [**[keep-going] VanillaJS 클린 코드 스터디**](https://github.com/no-back)
 
@@ -151,7 +152,8 @@ Email: wlsgml5628@gmail.com
 
 - 기간 | 2025-08 ~ 2025-10
     - 우아한형제들 교육 기관(NEXTSTEP) 에서 진행한 오프라인 ai 워크숍
-    - 사내 AI Agent 워크플로우 구축 및 개발 시간 단축 성공 사례 발표 (프롬프트 엔지니어링 실무 적용)
+    - 주니어 개발자 대상으로 오프라인 밋업 주최
+    - AI Agent 워크플로우 구축 및 개발 시간 단축 [성공 사례 발표](https://docs.google.com/presentation/d/1JeoV01_y2SNRaPoi4ZsbgXulCwAM9buHS0OvnXAd8JI/edit?usp=sharing)
 
 ### [**[NEXTSTEP] 글쓰기 워크숍 3기**](https://edu.nextstep.camp/c/81psVr9U)
 

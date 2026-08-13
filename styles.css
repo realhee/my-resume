@@ -167,6 +167,29 @@ h3::after {
   border-radius: 2px;
 }
 
+/* h3 내부에 외부 링크(a[target="_blank"])가 있는 경우 화살표(↗)를 제외하고 텍스트 영역에만 형광펜 적용 */
+h3:has(a[target="_blank"])::after {
+  display: none;
+}
+
+.row-left h3 a[target="_blank"] {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.row-left h3 a[target="_blank"]::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: 10px;
+  bottom: 2px;
+  height: 28%;
+  background: var(--highlight-color);
+  z-index: -1;
+  border-radius: 2px;
+}
+
 
 
 h4 {
@@ -202,31 +225,40 @@ li {
   line-height: 1.65;
 }
 
-a {
+a,
+.inline-link {
   color: var(--primary);
-  text-decoration: none;
+  text-decoration: none !important;
   transition: color 0.15s ease;
 }
 
-a:hover {
+a:hover,
+a:focus,
+a:active,
+.inline-link:hover,
+.inline-link:focus {
   color: var(--primary-dark);
-  text-decoration: underline;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
-/* 외부 링크 화살표 (↗) — 형광펜 영역에 포함되지 않도록 절대 위치 처리 */
-a[target="_blank"] {
+/* 외부 링크 화살표 (↗) — 본문 흐름 및 다음 글자 겹침 방지 레이아웃 */
+a[target="_blank"],
+.project h4 a,
+.row-left h3 a {
   position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 a[target="_blank"]::after,
 .project h4 a::after,
 .row-left h3 a::after {
   content: "↗";
-  position: absolute;
-  left: calc(100% + 2px);
-  top: -0.1em;
-  font-size: 0.7em;
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 4px;
+  font-size: 0.72em;
+  transform: translateY(-0.15em);
   opacity: 0.6;
   transition: opacity 0.15s;
   pointer-events: none;
@@ -379,8 +411,8 @@ section {
 }
 
 .row-left h3 a:hover {
-  color: var(--text);
-  text-decoration: underline;
+  color: var(--primary);
+  text-decoration: none;
 }
 
 .role {
