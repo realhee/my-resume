@@ -18,6 +18,7 @@
   --bg-subtle: #f8fafc;
   --border: #e2e8f0;
   --period-mark: #3a7bd5;
+  --highlight-color: rgba(255, 205, 41, 0.48);
 
   --font: 'Pretendard', -apple-system, BlinkMacSystemFont,
     'Apple SD Gothic Neo', 'Segoe UI', sans-serif;
@@ -35,6 +36,7 @@
   --bg-subtle: #1e1e1e;
   --border: #2d2d2d;
   --primary-light: #2d2d2d;
+  --highlight-color: rgba(234, 179, 8, 0.4);
 }
 
 /* ── 테마 전환 부드러운 트랜지션 ── */
@@ -98,12 +100,39 @@ body {
 
 /* ── 타이포그래피 ─────────────────────────────────────────── */
 .period-mark {
-  color: var(--period-mark);
-  font-weight: 900;
+  display: none;
 }
 
+/* h2 — 기존 border-bottom 유지 */
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 28px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border);
+  display: block;
+}
+
+/* h1 .highlight — 텍스트 하단에 살짝 걸치는 슬림한 형광펜 효과 (프로필 배경 자주색 반영) */
 .highlight {
-  color: var(--primary);
+  color: var(--text);
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  bottom: 4px;
+  height: 30%;
+  background: var(--highlight-color);
+  z-index: -1;
+  border-radius: 2px;
 }
 
 h1 {
@@ -115,22 +144,30 @@ h1 {
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  color: var(--text);
-  margin-bottom: 28px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--border);
-}
-
+/* h3 — 슬림한 형광펜 효과 일괄 적용 */
 h3 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--text);
   line-height: 1.4;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
 }
+
+h3::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: 2px;
+  height: 28%;
+  background: var(--highlight-color);
+  z-index: -1;
+  border-radius: 2px;
+}
+
+
 
 h4 {
   font-size: 1.15rem;
@@ -174,6 +211,32 @@ a {
 a:hover {
   color: var(--primary-dark);
   text-decoration: underline;
+}
+
+/* 외부 링크 화살표 (↗) — 형광펜 영역에 포함되지 않도록 절대 위치 처리 */
+a[target="_blank"] {
+  position: relative;
+  display: inline-block;
+}
+
+a[target="_blank"]::after,
+.project h4 a::after,
+.row-left h3 a::after {
+  content: "↗";
+  position: absolute;
+  left: calc(100% + 2px);
+  top: -0.1em;
+  font-size: 0.7em;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  font-weight: normal;
+}
+
+a[target="_blank"]:hover::after,
+.project h4 a:hover::after,
+.row-left h3 a:hover::after {
+  opacity: 1;
 }
 
 strong {
@@ -241,26 +304,41 @@ header.hero {
 .contact-list {
   list-style: none;
   padding: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .contact-list li {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 6px;
-  font-size: 0.85rem;
-  margin-bottom: 5px;
+  font-size: 0.78rem;
+  margin-bottom: 4px;
   color: var(--text-muted);
 }
 
-.contact-list a {
-  font-size: 0.85rem;
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
-.contact-icon {
-  font-size: 0.85rem;
-  width: 18px;
-  text-align: center;
+.contact-links .sep {
+  color: var(--text-light);
+  font-size: 0.72rem;
+  user-select: none;
+}
+
+.contact-list a {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.contact-list a:hover {
+  color: var(--primary);
+  text-decoration: none;
 }
 
 /* ── 섹션 공통 ────────────────────────────────────────────── */
@@ -297,11 +375,11 @@ section {
 }
 
 .row-left h3 a {
-  color: var(--primary);
+  color: var(--text);
 }
 
 .row-left h3 a:hover {
-  color: var(--primary-dark);
+  color: var(--text);
   text-decoration: underline;
 }
 
@@ -309,7 +387,7 @@ section {
   display: block;
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--text-muted);
   margin-bottom: 4px;
   word-break: keep-all;
   white-space: nowrap;
@@ -504,13 +582,14 @@ footer a {
   .row-left {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 
   .row-left h3 {
-    width: 100%;
+    width: auto;
+    max-width: max-content;
     white-space: normal;
   }
 
@@ -799,7 +878,8 @@ footer a {
        자연스럽게 이어져서 경력↔업무경험 사이 공백 제거 */
   h2,
   h3,
-  .project {
+  .project,
+  .portfolio-card {
     page-break-inside: avoid;
     break-inside: avoid;
   }
@@ -807,5 +887,35 @@ footer a {
   h2 {
     page-break-after: avoid;
     break-after: avoid;
+  }
+
+  /* 인쇄 시 네비게이션 및 미디어 제어 */
+  .nav-bar,
+  .btn-action {
+    display: none !important;
+  }
+
+  .portfolio-card {
+    border: 1px solid var(--border);
+    box-shadow: none !important;
+    margin-bottom: 12pt;
+    padding: 12pt;
+    background: #fff !important;
+  }
+
+  .arch-flow {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 8pt !important;
+  }
+
+  .arch-step {
+    font-size: 7.5pt !important;
+  }
+
+  .kpi-badge {
+    border: 1px solid #3a7bd5 !important;
+    color: #2563b0 !important;
+    background: #eff6ff !important;
   }
 }

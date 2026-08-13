@@ -10,17 +10,17 @@
 
 Email: wlsgml5628@gmail.com
 
-✍🏻 Blog | [https://geniee.tistory.com](https://geniee.tistory.com/)
+🪐 Portfolio URL | [Link](https://docs.google.com/presentation/d/e/2PACX-1vToR_l1Gv_Y_cjxiogIteYaOT3LpUIp4uabEHjP96ITnZZeGSj24oE6o_5TkJdkoeWlF-uIoBjNd7rj/pub?start=false&loop=false&delayms=3000&slide=id.p1)
 
 ⚙️ Github | [https://github.com/realhee](https://github.com/realhee)
 
-🪐 Portfolio URL | [Link](https://docs.google.com/presentation/d/e/2PACX-1vToR_l1Gv_Y_cjxiogIteYaOT3LpUIp4uabEHjP96ITnZZeGSj24oE6o_5TkJdkoeWlF-uIoBjNd7rj/pub?start=false&loop=false&delayms=3000&slide=id.p1) 
+✍🏻 Blog | [https://geniee.tistory.com](https://geniee.tistory.com/) 
 
 ## 소개.
 
 ---
 
-**UI/UX 플랫폼의 프레임워크 연구개발자**로, 프레임워크 의존 없는 VanillaJS 기반의 엔진 및 공통 컴포넌트 아키텍처를 설계해 왔습니다. 단순 기능 개발을 넘어 **기술 특허 출원**, **30억 규모 프로젝트 테크 리딩**, **DX(개발자 경험) 개선을 통한 버그률 40% 감축** 등 비즈니스와 팀 생산성에 직접적인 영향을 미치는 문제 해결을 즐깁니다.
+**UI/UX 플랫폼의 프레임워크 연구개발자**로, 프레임워크 의존 없는 VanillaJS 기반의 엔진 및 공통 컴포넌트 아키텍처를 설계해 왔습니다. 단순 기능 개발을 넘어 **기술 특허 출원**, **30억 규모 프로젝트 테크 리딩**, **DX(개발자 경험) 개선을 통한 버그률 40% 감축** 등 비즈니스와 팀 생산성에 직접적인 임팩트를 내는 문제 해결에 깊이 몰입합니다.
 
 ## 경력.
 
@@ -115,27 +115,6 @@ Email: wlsgml5628@gmail.com
 
 ---
 
-### [[NEXTSTEP] 의식적인 연습 워크숍](https://edu.nextstep.camp/c/7FK82KZb)
-
-- 기간 | 2025-08 ~ 2025-10
-    - 우아한형제들 교육 기관(NEXTSTEP) 에서 진행한 오프라인 ai 워크숍
-    - 프롬프트 엔지니어링 실무 적용으로 개발 및 업무 시간 단축 사례 발표
-
-### [**[NEXTSTEP] 글쓰기 워크숍 3기**](https://edu.nextstep.camp/c/81psVr9U)
-
-- 기간 | 2024-04 ~ 2024-06
-    - 우아한형제들 교육 기관(NEXTSTEP) 에서 진행한 오프라인 저자 워크숍
-    - 프롬프트를 이해하고 참여자들의 피드백을 받아 [ebook](https://bookk.co.kr/bookStore/667b6f2ea52b96ab870a0aa7) 출간
-    - 공동 저자, 리뷰어, 출간 행사 기획 및 발표 역할 수행
-
-### [[NEXTSTEP] **TDD, 클린 코드 with React 2기**](https://github.com/next-step/react-payments/pull/87)
-
-- 기간 | 2023-02 ~ 2023-04
-    - 모바일/데스크탑 타겟의 장바구니 페이먼츠 웹 앱 구현
-    - **Storybook**을 사용해 Component Driven Development 기반 상향식 컴포넌트 설계
-    - **MSW**를 통한 Backend API Mocking 및 React 상태 테스팅으로 DX 향상 경험
-    - **Slack, Github Pull Request**을 통한 현업 실무진과의 코드 리뷰 경험
-
 ### [기술서적 독서 스터디](https://github.com/FrontendStudySeoul)
 
 - 기간 | 2022-03 ~ 진행 중
@@ -160,6 +139,27 @@ Email: wlsgml5628@gmail.com
 ## 교육.
 
 ---
+
+### [**[NEXTSTEP] 의식적인 연습 워크숍**](https://edu.nextstep.camp/c/7FK82KZb)
+
+- 기간 | 2025-08 ~ 2025-10
+    - 우아한형제들 교육 기관(NEXTSTEP) 에서 진행한 오프라인 ai 워크숍
+    - 사내 AI Agent 워크플로우 구축 및 개발 시간 단축 성공 사례 발표 (프롬프트 엔지니어링 실무 적용)
+
+### [**[NEXTSTEP] 글쓰기 워크숍 3기**](https://edu.nextstep.camp/c/81psVr9U)
+
+- 기간 | 2024-04 ~ 2024-06
+    - 우아한형제들 교육 기관(NEXTSTEP) 에서 진행한 오프라인 저자 워크숍
+    - 프롬프트를 이해하고 참여자들의 피드백을 받아 [ebook](https://bookk.co.kr/bookStore/667b6f2ea52b96ab870a0aa7) 출간
+    - 공동 저자, 리뷰어, 출간 행사 기획 및 발표 역할 수행
+
+### [[NEXTSTEP] **TDD, 클린 코드 with React 2기**](https://github.com/next-step/react-payments/pull/87)
+
+- 기간 | 2023-02 ~ 2023-04
+    - 모바일/데스크탑 타겟의 장바구니 페이먼츠 웹 앱 구현
+    - **Storybook**을 사용해 Component Driven Development 기반 상향식 컴포넌트 설계
+    - **MSW**를 통한 Backend API Mocking 및 React 상태 테스팅으로 DX 향상 경험
+    - **Slack, Github Pull Request**을 통한 현업 실무진과의 코드 리뷰 경험
 
 ### Vue.js 프로그래밍 실무 교육
 
